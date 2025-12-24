@@ -59,10 +59,10 @@ export function SignupOTPForm({
           <form className="p-6 md:p-8" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
               <div className="flex flex-col items-center text-center">
-                <h1 className="text-2xl font-bold">Welcome to AASTU Library</h1>
-                <p className="text-balance text-muted-foreground">
-                  Enter your OTP send to your email
-                </p>
+                <div className="text-2xl font-bold">Welcome to AASTU Library</div>
+                <div className="text-balance text-muted-foreground">
+                  Enter your OTP sent to your email
+                </div>
               </div>
               <div className="flex justify-center min-h-32">
               <InputOTP
@@ -85,9 +85,9 @@ export function SignupOTPForm({
                 {isLoading ? <Loader className="animate-spin" /> : "Submit"}
               </Button>
               {(isError || errorMessage) && (
-                <p className="text-red-500 text-sm italic">
+                <div className="text-red-500 text-sm italic">
                   {errorMessage}
-                </p>
+                </div>
               )}
               <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
                 <span className="relative z-10 bg-background px-2 text-muted-foreground"></span>
