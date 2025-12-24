@@ -2,7 +2,7 @@
 
 **Project:** AASTU Library Management System  
 **Baseline ID:** BL2  
-**Date:** 2025-XX-XX  
+**Date:** 2025-12-24  
 **Prepared by:** Kalkidan Amare (SCM Lead)
 
 ---
@@ -36,4 +36,3 @@ combining frontend and backend core functionalities into a stable configuration.
 |----|----|----|
 | SCM Lead | Kalkidan Amare | Approved |
 | Project Manager | Kidus Asebe | Approved |
-| Development Lead | Kidus Hawoltu | Approved |

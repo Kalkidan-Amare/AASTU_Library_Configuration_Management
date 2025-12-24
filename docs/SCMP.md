@@ -9,17 +9,17 @@ Department of Software Engineering
 Addis Ababa Science and Technology University (AASTU)
 
 ## Prepared By
-Elite team members and Kalkidan Amare(SCM Lead)
+Elite team members
 
 ## Version
-v1.0
+v1.1
 
 ## Date
-12/23/2025
+12/25/2025
 
 ---
 
-## 1. Purpose and Scope
+## 1. Purpose Scope and Objectives
 
 ### 1.1 Purpose
 The purpose of this Software Configuration Management Plan (SCMP) is to define the policies, procedures, roles, and tools used to manage and control changes to the **AASTU Library Management System – Update** project.
@@ -40,6 +40,13 @@ This SCMP applies to all project artifacts including:
 
 The scope of this project is limited to a **prototype system**, and the emphasis is on SCM practices rather than full system functionality.
 
+### 1.3 Objectives
+- Ensure CI identification and ownership
+- Maintain controlled change process via CRs
+- Create stable baselines for releases
+- Provide auditable evidence for PCA & FCA
+- Support reproducible releases and rollback
+
 ---
 
 ## 2. Roles and Responsibilities
@@ -53,6 +60,9 @@ The scope of this project is limited to a **prototype system**, and the emphasis
 | Backend Developer | Kirubel Wondwosen | Backend logic and data handling |
 | QA / Tester | Hermela Dereje | Testing, verification, Functional Configuration Audit |
 | Documentation & Release Engineer | Kidus Berhane | Documentation updates, release notes, audit reports |
+
+**Approval Authorities**
+- SCM Lead and Project Manager must sign off baselines and releases. Their approvals are recorded in baseline and release documents.
 
 ---
 
@@ -130,9 +140,13 @@ The project uses the following branching strategy:
   Critical fixes (if required)
 
 ### 5.2 Branch Rules
-- Direct commits to `main` are not allowed
-- All changes must go through Pull Requests (PRs)
-- PRs require review and approval before merging
+1. Create `feature/` branch from `dev`.
+2. Implement, commit locally, push to remote.
+3. Open PR targeting `dev`.
+4. At least one code reviewer + QA review required (Dev Lead or SCM Lead).
+5. Merge to `dev` after approvals.
+6. When `dev` is stable and candidate for release, create a release PR from `dev` → `main` (requires SCM Lead & Project Manager approval).
+7. Commit SCM documents, tests, and CR closure evidence to `main` before tagging baseline.
 
 ---
 
