@@ -5,7 +5,7 @@ import Link from "next/link";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { ModeToggle } from "@/components/mode-toggle";
 import { SignupForm } from "@/components/signup-form";
-import { SignupOTPForm } from "@/components/signup-otp-form";
+import { SignupOTPForm } from "@/components/otp-form";
 import { ResetPasswordForm } from "@/components/reset-password-form";
 
 export default function ResetPasswordPage() {
